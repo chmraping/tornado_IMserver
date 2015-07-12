@@ -15,8 +15,8 @@
 python serv.py #start service
 
 ```
-####登陆:使用浏览器访问http://localhost:8888/user/byname/Billy/login (其中Billy是用户名)返回值是包括uid。
-####发起websocket:使用浏览器调用ws接口，如下
+####使用浏览器访问http://localhost:8888/user/byname/Billy/login (其中Billy是用户名)返回值包括uid。
+####发起websocket，使用浏览器调用ws接口，如下
 ```javascript
 var s = new WebSocket('ws://localhost:8888/user/byid/1')  //1为uid
 s.onmessage = function(v){
