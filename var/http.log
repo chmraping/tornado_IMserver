@@ -1,0 +1,53 @@
+[15-07-12 14:23:31] 404 GET / (::1) 1.21ms
+[15-07-12 14:23:31] 404 GET /favicon.ico (::1) 2.30ms
+[15-07-12 14:23:50] 404 GET /user/byname/billy (::1) 1.52ms
+[15-07-12 14:24:08] 500 GET /user/byname/billy/login (::1) 6.83ms
+[15-07-12 14:24:45] 200 GET /user/byname/billy/login (::1) 6.87ms
+[15-07-12 14:24:53] 404 GET / (::1) 1.28ms
+[15-07-12 14:25:03] 200 GET /user/byname/Lucy/login (::1) 4.05ms
+[15-07-12 14:33:00] 200 GET /user/byname/billy/login (::1) 7.96ms
+[15-07-12 14:33:03] 200 GET /user/byname/Lucy/login (::1) 3.24ms
+[15-07-12 14:33:12] Uncaught exception in /user/byid/1
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/tornado-4.1-py2.7-macosx-10.10-intel.egg/tornado/websocket.py", line 402, in _run_callback
+    callback(*args, **kwargs)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 68, in open
+    Operations().set_notifier(uid, self)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 21, in set_notifier
+    user = UserPool.select_user(uid)
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 53, in select_user
+    return cls.users[uid]
+KeyError: u'1'
+[15-07-12 14:34:31] 200 GET /user/byname/billy/login (::1) 6.04ms
+[15-07-12 14:34:47] 200 GET /user/byname/Lucy/login (::1) 4.20ms
+[15-07-12 14:42:07] 500 GET /user/byname/billy/login (::1) 8.90ms
+[15-07-12 14:43:00] 500 GET /user/byname/billy/login (::1) 7.72ms
+[15-07-12 14:43:38] 200 GET /user/byname/billy/login (::1) 4.85ms
+[15-07-12 14:43:50] 200 GET /user/byname/Lucy/login (::1) 4.76ms
+[15-07-12 14:44:54] Uncaught exception in /user/byid/1
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/tornado-4.1-py2.7-macosx-10.10-intel.egg/tornado/websocket.py", line 402, in _run_callback
+    callback(*args, **kwargs)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 77, in on_message
+    self.write_error(900, {'err': e})
+TypeError: write_error() takes exactly 2 arguments (3 given)
+[15-07-12 14:45:55] 200 GET /user/byname/billy/login (::1) 5.97ms
+[15-07-12 14:46:06] 200 GET /user/byname/Lucy/login (::1) 6.84ms
+[15-07-12 14:46:43] 200 GET /user/byname/Lucy/login (::1) 5.15ms
+[15-07-12 14:49:04] 200 GET /user/byname/billy/login (::1) 4031.17ms
+[15-07-12 14:49:16] 200 GET /user/byname/Lucy/login (::1) 9.21ms
+[15-07-12 14:52:00] 200 GET /user/byname/billy/login (::1) 7.63ms
+[15-07-12 14:52:07] 500 GET /user/byname/Lucy/login (::1) 5.42ms
+[15-07-12 14:52:33] 200 GET /user/byname/billy/login (::1) 7.52ms
+[15-07-12 14:52:43] 200 GET /user/byname/Lucy/login (::1) 5.83ms
+[15-07-12 14:54:42] 200 GET /user/byname/billy/login (::1) 4.82ms
+[15-07-12 14:54:53] 200 GET /user/byname/Lucy/login (::1) 4.49ms
+[15-07-12 14:56:20] 404 GET / (::1) 1.15ms
+[15-07-12 14:56:27] 200 GET /user/byname/Rowland/login (::1) 3.76ms
+[15-07-12 14:56:37] 404 GET / (::1) 1.39ms
+[15-07-12 14:56:45] 200 GET /user/byname/Lucifer/login (::1) 3.70ms
+[15-07-12 14:57:04] 200 GET /user/byname/Lucy/login (::1) 5.90ms
+[15-07-12 14:57:32] 200 GET /user/byname/billy/login (::1) 5.10ms
+[15-07-12 14:57:44] 200 GET /user/byname/Lucy/login (::1) 5.06ms
+[15-07-12 14:57:53] 200 GET /user/byname/Rowland/login (::1) 5.18ms
+[15-07-12 14:58:07] 200 GET /user/byname/Lucifer/login (::1) 4.84ms

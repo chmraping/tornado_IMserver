@@ -1,0 +1,140 @@
+[15-07-12 14:21:55][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:22:35][MainThread][ops.py:66] INFO: opened!1234
+[15-07-12 14:24:02][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:24:08][Thread-6][core.py:78] ERROR: 'User' object has no attribute 'uid'
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/core.py", line 62, in call_wrap
+    res = call(hnd, *args, **kwargs) or ''
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 37, in bins
+    uid = Operations().login(username)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 13, in login
+    user.login()
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 19, in login
+    self.uid = UserPool._max_uid + 1
+AttributeError: 'User' object has no attribute 'uid'
+[15-07-12 14:24:43][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:24:45][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:25:03][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:25:51][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:32:57][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:33:00][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:33:03][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:33:12][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:34:28][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:34:31][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:34:36][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:34:47][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:42:03][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:42:07][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:42:07][Thread-6][core.py:78] ERROR: 'Msg' object has no attribute 'level'
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/core.py", line 62, in call_wrap
+    res = call(hnd, *args, **kwargs) or ''
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 37, in bins
+    uid = Operations().login(username)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 13, in login
+    user.login()
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 23, in login
+    content='%s - %s came in!' % (time.strftime('%X'), self.username)).toString())
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/Message.py", line 17, in __init__
+    self.level = level
+AttributeError: 'Msg' object has no attribute 'level'
+[15-07-12 14:42:57][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:43:00][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:43:00][Thread-6][core.py:78] ERROR: 'Msg' object has no attribute 'level'
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/core.py", line 62, in call_wrap
+    res = call(hnd, *args, **kwargs) or ''
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 37, in bins
+    uid = Operations().login(username)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 13, in login
+    user.login()
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 24, in login
+    content='%s - %s came in!' % (time.strftime('%X'), self.username)).toString())
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/Message.py", line 17, in __init__
+    self.level = level
+AttributeError: 'Msg' object has no attribute 'level'
+[15-07-12 14:43:35][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:43:38][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:43:42][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:43:50][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:43:59][MainThread][ops.py:66] INFO: opened!2
+[15-07-12 14:45:51][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:45:55][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:46:00][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:46:06][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:46:43][Thread-7][User.py:21] INFO: Lucy(3) login!
+[15-07-12 14:47:07][Thread-9][User.py:21] INFO: Lucy(4) login!
+[15-07-12 14:48:56][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:49:00][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:49:08][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:49:16][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:49:28][MainThread][ops.py:66] INFO: opened!2
+[15-07-12 14:50:30][MainThread][ops.py:77] ERROR: u'1'
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 75, in on_message
+    Operations().talk_to(self.uid, to_uid, content)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 27, in talk_to
+    from_user.talk_to(to_uid, Msg(content=s_msg, level=Level.user|Level.info))
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 35, in talk_to
+    obj_user = UserPool.select_user(uid)
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 59, in select_user
+    return cls.users[uid]
+KeyError: u'1'
+[15-07-12 14:51:56][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:52:03][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:52:07][Thread-6][core.py:78] ERROR: cannot concatenate 'str' and 'int' objects
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/core.py", line 62, in call_wrap
+    res = call(hnd, *args, **kwargs) or ''
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 37, in bins
+    uid = Operations().login(username)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 13, in login
+    user.login()
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 19, in login
+    self.uid = str(UserPool._max_uid + 1)
+TypeError: cannot concatenate 'str' and 'int' objects
+[15-07-12 14:52:29][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:52:35][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:52:51][MainThread][ops.py:66] INFO: opened!2
+[15-07-12 14:53:35][MainThread][ops.py:77] ERROR: 2
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 75, in on_message
+    Operations().talk_to(self.uid, to_uid, content)
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 27, in talk_to
+    from_user.talk_to(to_uid, Msg(content=s_msg, level=Level.user|Level.info))
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 35, in talk_to
+    obj_user = UserPool.select_user(uid)
+  File "/Users/luoran/PycharmProjects/imserver/biz/objs/User.py", line 59, in select_user
+    return cls.users[uid]
+KeyError: 2
+[15-07-12 14:54:39][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:54:42][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:54:45][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:54:53][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:54:55][MainThread][ops.py:66] INFO: opened!2
+[15-07-12 14:55:24][MainThread][ops.py:77] ERROR: No JSON object could be decoded
+Traceback (most recent call last):
+  File "/Users/luoran/PycharmProjects/imserver/biz/ops.py", line 72, in on_message
+    o_msg = json.loads(message)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 365, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 383, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+[15-07-12 14:55:32][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:56:27][Thread-7][User.py:21] INFO: Rowland(2) login!
+[15-07-12 14:56:45][Thread-6][User.py:21] INFO: Lucifer(3) login!
+[15-07-12 14:57:04][Thread-8][User.py:21] INFO: Lucy(4) login!
+[15-07-12 14:57:29][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/imserver/etc/includes_dev.json)
+[15-07-12 14:57:32][Thread-6][User.py:21] INFO: billy(1) login!
+[15-07-12 14:57:37][MainThread][ops.py:66] INFO: opened!1
+[15-07-12 14:57:44][Thread-6][User.py:21] INFO: Lucy(2) login!
+[15-07-12 14:57:49][MainThread][ops.py:66] INFO: opened!2
+[15-07-12 14:57:53][Thread-7][User.py:21] INFO: Rowland(3) login!
+[15-07-12 14:58:01][MainThread][ops.py:66] INFO: opened!3
+[15-07-12 14:58:07][Thread-6][User.py:21] INFO: Lucifer(4) login!
+[15-07-12 14:58:14][MainThread][ops.py:66] INFO: opened!4
+[15-07-12 15:12:26][MainThread][serv.py:39] INFO: starting..., listen [8888], configured by (/Users/luoran/PycharmProjects/tornado_IMserver/etc/includes_dev.json)

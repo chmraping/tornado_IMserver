@@ -1,0 +1,126 @@
+{
+  "live_zq": {
+    "urls": {
+      /* 完整赛事信息*/
+      "zq_match_index": "http://www.500.com/static/info/bifen/xml/livedata/all/IndexXml.xml",
+      /* 完整即时比分*/
+      "zq_live": "http://www.500.com/static/info/bifen/xml/livedata/all/Full.txt",
+      /* 竞彩足球赛事信息 {yyyymmdd}*/
+      "zq_match_index_of_jc": "http://www.500.com/static/info/bifen/xml/livedata/jczq/{expect}IndexXml.xml",
+      /* 竞彩足球列表即时比分直播*/
+      "zq_live_of_jc": "http://www.500.com/static/info/bifen/xml/livedata/jczq/{expect}Full.txt",
+      /* 足球单场详细直播 {dir}{expect}*/
+      "zq_single_live": "http://www.500.com/static/info/bifen/xml/livedata/matchinfo/{dir}/{fid}.xml",
+      /* 足球logo*/
+      "zq_team_logo": "http://odds.500.com/static/soccerdata/images/TeamPic/teamsignnew_{teamid}.png",
+      /* 足球评论*/
+      "zq_comm": "http://m.500.com/info/live/"
+    },
+    "zq_events": {
+      "1": "进球",
+      "2": "点球",
+      "3": "乌龙",
+      "4": "黄牌",
+      "5": "红牌",
+      "6": "两黄变红",
+      "7": "进球无效",
+      "8": "换人",
+      "9": "换入",
+      "10": "换出"
+    },
+    "onlive_status": {
+      "0": "未开始",
+      "1": "进行中",
+      "2": "中场",
+      "3": "下半场",
+      "4": "完场",
+      "5": "取消",
+      "6": "改期",
+      "7": "腰斩",
+      "8": "中断",
+      "9": "待定",
+      "10": "加时赛开始",
+      "11": "加时结束",
+      "12": "点球开始",
+      "13": "点球结束"
+    },
+    "zq_events_txt": {
+      "1": [
+        "{minute}分钟，{minute}分钟时，{player}进球得分",
+        "{player}在{minute}分钟，把球送进了对方大门",
+        "球进啦！{player}!进球的是{player}",
+        "{player}将球轰进了对方大门",
+        "还没等对方守门员反应过来，{player}已经破门得分了！",
+        "{player}的这记进球简直屌炸天",
+        "漂亮的一击！{player}的这记进球让对方后卫目瞪口呆",
+        "哦天哪，进球了！{player}的这记射门简直快如一道闪电",
+        "{team}的球迷沸腾了，进球的功臣是{player}",
+        "进球！{player}势不可挡，{anti_team}的后卫只能望球兴叹了"
+      ],
+      "2": [
+        "{player}来罚点球",
+        "点球！{player}"
+      ],
+      "3": [
+        "噢 No!{player}误把球踢进了自家大门",
+        "{player}的这记乌龙球简直让人震惊"
+      ],
+      "4": [
+        "黄牌！{player}的行为逃不掉裁判敏锐的眼睛",
+        "此时裁判冲了过来对着{player}掏出了一张黄牌",
+        "没有争议！{player}吃到了一张黄牌",
+        "对于{player}的行为裁判给出了黄牌警告",
+        "裁判示意{player}刚才的动作犯规并出示了一张黄牌",
+        "比赛进行到{minute}分钟时，{player}领到了一张黄牌"
+      ],
+      "5": [
+        "{player}被红牌罚下了，这对于{anti_team}来说无疑是个好消息",
+        "尽管很不服气，{player}只能接受被红牌罚下",
+        "裁判似乎并不理会众人理论，坚持掏出红牌将{player}罚下",
+        "红牌！{player}只得悍然离场了",
+        "终于，在比赛进行到{minute}分钟时，{player}被罚下了"
+      ],
+      "6": [
+        "第二次严重犯规！{player}被罚下了！",
+        "尽管还想辩解，可{player}只能选择被罚下了，因为他之前已经吃到一张黄牌了",
+        "长点心吧！{player}由于两黄变红牌被罚下场了",
+        "面对{player}再度犯规，裁判掏出红牌打算让{player}去冷板凳冷静一下"
+      ],
+      "7": [
+        "就在{team}的球迷跟{player}一起欢呼的时候，裁判示意进球无效！",
+        "遗憾！{player}刚刚的进球被裁判吹掉了！",
+        "{player}的进球无效，这下{anti_team}松了口气",
+        "{player}打着手势认为刚刚的进球应该有效，但裁判仍然把这记进球吹掉了",
+        "这球不算，{player}的进球无效"
+      ],
+      "9": ["{player}换入"],
+      "10": ["{player}换出"]
+    }
+  },
+  "live_lq": {
+    "urls": {
+      /* 完整的赛事信息*/
+      "lq_match_index": "http://live.500.com/static/info/bifen/xml/livedata/lq/IndexXml.xml",
+      /* 完整即时比分*/
+      "lq_live": "http://live.500.com/static/info/bifen/xml/livedata/lq/FullJson.txt",
+      /* 事件*/
+      "lq_sigle_live": "http://www.500.com/static/info/bifen/xml/livedata/lqtext/{dir}/{fid}LiveJson.txt"
+    },
+    "onlive_status": {
+      "0": "",
+      "1": "未开始",
+      "2": "第1节",
+      "3": "第2节",
+      "4": "中场",
+      "5": "第3节",
+      "6": "第4节",
+      "7": "加时1",
+      "8": "加时2",
+      "9": "加时3",
+      "10": "加时4",
+      "11": "已结束",
+      "12": "改期",
+      "13": "节间休息"
+    }
+  }
+}
