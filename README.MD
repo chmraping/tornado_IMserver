@@ -19,7 +19,9 @@ python serv.py #start service
 ####发起websocket:使用浏览器调用ws接口，如下
 ```javascript
 var s = new WebSocket('ws://localhost:8888/user/byid/1')  //1为uid
-s.onmessage = function(v){console.log(v.data)}
+s.onmessage = function(v){
+    console.log(v.data)
+}
 s.send('{"to_uid":"1","content":"hello!"}') //to_uid 为对方uid，登陆多个用户之后使用
 ```
 
@@ -35,7 +37,7 @@ s.send('{"to_uid":"1","content":"hello!"}') //to_uid 为对方uid，登陆多个
 ##关于作者
 
 ```javascript
-  var ihubo = {
+  var myinfo = {
     nickName  : "nikoloss",
     site : "http://www.zhihu.com/people/luo-ran-22"
   }
